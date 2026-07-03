@@ -132,7 +132,7 @@ class ReadDB(object):
             return pd.DataFrame()
         
         # Generar periodos de inicio y fin de mes
-        end_periods = pd.date_range(start_date, end_date, freq='M', inclusive = 'both')    
+        end_periods = pd.date_range(start_date, end_date, freq='ME', inclusive = 'both')    
         if not  pd.Timestamp(end_date).is_month_end:
             end_periods = end_periods.append(pd.DatetimeIndex([end_date]))
         
@@ -193,9 +193,10 @@ class ReadDB(object):
         
         cols = data.columns
         for col in cols:
-            data[col] = pd.to_numeric(data[col],errors='ignore')
+            if pd.api.types.is_integer(data[col]):
+                data[col] = pd.to_numeric(data[col])
         if ('Date' or 'date') in cols:
-            data['Date'] = pd.to_datetime(data['Date'],errors='ignore', format= '%Y-%m-%d')
+            data['Date'] = pd.to_datetime(data['Date'], errors='coerce', format= '%Y-%m-%d')
     
         return data
 
