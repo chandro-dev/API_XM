@@ -1496,6 +1496,11 @@ if __name__ == '__main__':
     pb_nal_txr = VariableSIMEM(cod_variable=codigo_variable, start_date=fecha_inicio, 
                                end_date=fecha_fin, version='TXR', filters=filter_variable)
 
+    codigo_variable = 'PB_Nal'
+    fecha_inicio = '2024-01-01'
+    fecha_fin = '2026-02-28'
+    filter_variable = ["Valor","between",["290","300"]]
+    
 #%%
     # Se obtienen los datos del precio de bolsa nacional en su última versión
 
