@@ -6,6 +6,8 @@
 
 [Abrir dashboard ejecutivo](portfolio/dashboard.html)
 
+Capturas 16:9 listas para LinkedIn: [`portfolio/screenshots/`](portfolio/screenshots/).
+
 ## El reto
 
 Convertir datos públicos de XM —dispersos en respuestas diarias con 24 columnas horarias— en un producto analítico que permita responder dos preguntas:
