@@ -1,0 +1,16 @@
+{
+  "train_rows": 37511,
+  "test_rows": 1441,
+  "backend": "xgboost",
+  "device": "cpu",
+  "mae": 48.608627103346876,
+  "rmse": 89.48545240595872,
+  "baseline_lag_1h_rmse": 121.19316260867114,
+  "beats_baseline": true,
+  "rmse_improvement_vs_baseline_percent": 26.162953024912472,
+  "mape_percent": 11.24210394029818,
+  "r2": 0.8720648722244209,
+  "test_start": "2026-04-19T23:00:00",
+  "test_end": "2026-06-18T23:00:00",
+  "feature_count": 26
+}

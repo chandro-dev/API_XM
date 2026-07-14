@@ -130,3 +130,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 pydataxm_prb.py
+
+# Large local fact table; reproducible from XM and unsuitable for Git hosting.
+outputs/consumo_actores/consumo_hourly.csv

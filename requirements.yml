@@ -7,6 +7,10 @@ dependencies:
   - pip:
       - pandas>=2.2.3,<=3.0.3
       - numpy
+      - scikit-learn
+      - joblib
+      - xgboost
+      - matplotlib
       - pydataxm
       - requests
       - aiohttp

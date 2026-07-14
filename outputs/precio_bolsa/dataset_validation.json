@@ -1,0 +1,16 @@
+{
+  "rows": 39120,
+  "start": "2022-01-01T00:00:00",
+  "end": "2026-06-18T23:00:00",
+  "expected_hourly_rows": 39120,
+  "missing_hours": 0,
+  "first_missing_hours": [],
+  "duplicated_timestamps": 0,
+  "null_prices": 0,
+  "negative_prices": 0,
+  "extreme_high_rows_iqr_3x": 408,
+  "min_price": 89.05597,
+  "median_price": 290.73411,
+  "mean_price": 409.1128686768916,
+  "max_price": 2675.64965
+}

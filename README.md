@@ -1,3 +1,5 @@
+> **Caso de portafolio:** este repositorio incluye **Colombia Energy Intelligence**, una solución end-to-end de ingeniería de datos, forecasting y BI. Consulta la [presentación técnica](PORTFOLIO.md), abre el [dashboard ejecutivo](portfolio/dashboard.html) o usa el [post listo para LinkedIn](LINKEDIN_POST.md).
+
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/69567089/132707858-021aeaf4-8cf9-44e9-b4d3-0350b60418de.png">
 </p>
@@ -447,5 +449,101 @@ https://servapibi.xm.com.co/lists
 Body:
 {"MetricId": "ListadoMetricas"}
 ```
+
+## Modelo de prediccion del Precio de Bolsa Nacional
+
+Este repositorio incluye un pipeline reproducible para construir un primer
+modelo predictivo del precio de bolsa de energia en Colombia usando la API XM.
+El script consulta la metrica `PrecBolsNaci`, transforma las 24 columnas
+horarias de cada dia en una serie temporal, crea variables de calendario,
+rezagos y ventanas moviles, entrena un modelo de regresion y genera un
+pronostico horario.
+
+Ejemplo de ejecucion:
+
+```console
+python models/precio_bolsa_model.py --start-date 2022-01-01 --end-date 2024-12-31 --forecast-hours 24
+```
+
+Para entrenar usando CUDA en una GPU NVIDIA, por ejemplo una RTX 3050:
+
+```console
+python models/precio_bolsa_model.py --backend xgboost --device cuda --start-date 2022-01-01 --end-date 2024-12-31 --forecast-hours 24
+```
+
+Si se quiere forzar CPU:
+
+```console
+python models/precio_bolsa_model.py --backend sklearn --device cpu --use-cache
+```
+
+Salidas generadas en `outputs/precio_bolsa/`:
+
+- `data_hourly.csv`: historico horario normalizado.
+- `dataset_validation.json`: validacion de continuidad horaria, nulos, duplicados y rangos.
+- `metrics.json`: metricas de validacion temporal.
+- `test_predictions.csv`: predicciones sobre el tramo de prueba.
+- `forecast.csv`: pronostico futuro.
+- `model.joblib`: modelo entrenado y columnas usadas.
+
+Para exigir que el entrenamiento se detenga si el historico tiene huecos,
+duplicados, precios nulos o precios negativos:
+
+```console
+python models/precio_bolsa_model.py --backend xgboost --device cuda --strict-validation
+```
+
+Una validacion basica de que el entrenamiento va bien es revisar:
+
+- `dataset_validation.json`: `missing_hours`, `duplicated_timestamps`, `null_prices` y `negative_prices` deberian ser `0`.
+- `metrics.json`: `beats_baseline` deberia ser `true` y `rmse_improvement_vs_baseline_percent` deberia ser positivo frente al baseline `lag_1h`.
+- `test_predictions.csv`: comparar `target_price`, `prediction_price` y `baseline_lag_1h` en el periodo de prueba.
+
+Para evitar consultar de nuevo la API si ya existe `data_hourly.csv`:
+
+```console
+python models/precio_bolsa_model.py --use-cache --forecast-hours 48
+```
+
+### Dashboard del historico y aprendizaje del modelo
+
+Despues de entrenar el modelo, se puede generar un dashboard HTML con el
+historico, mapas de calor, validacion temporal, forecast e importancia de
+variables:
+
+```console
+python dashboards/precio_bolsa_dashboard.py --input-dir outputs/precio_bolsa --output outputs/precio_bolsa/dashboard.html
+```
+
+El archivo `outputs/precio_bolsa/dashboard.html` se puede abrir directamente en
+el navegador. Incluye:
+
+- Historico diario y mensual del precio de bolsa.
+- Mapa de calor historico por dia de semana y hora.
+- Comparacion real vs modelo vs baseline en el tramo de prueba.
+- Mapa de calor de errores por dia y hora.
+- Forecast generado.
+- Importancia de variables y mapa de calor de que senales aprendio el modelo.
+
+## Analisis de actores con mayor consumo
+
+Para identificar los agentes con mayor demanda comercial historica se usa la
+metrica XM `DemaCome` con entidad `Agente`.
+
+```console
+python models/consumo_actores.py --start-date 2022-01-01 --end-date 2024-12-31 --top-n 20
+```
+
+Salidas generadas en `outputs/consumo_actores/`:
+
+- `consumo_hourly.csv`: demanda horaria por agente.
+- `top_consumidores.csv`: ranking historico por demanda total.
+- `consumo_mensual_top.csv`: serie mensual de los agentes principales.
+- `heatmap_top.csv`: matriz base para mapas de calor por dia y hora.
+- `agentes.csv`: metadatos de agentes, cuando la API los entrega.
+
+Tambien hay un notebook en
+`examples/casos_uso_analitica/consumo_actores_historico.ipynb` para graficar
+el historico, ranking y mapas de calor.
 
 
