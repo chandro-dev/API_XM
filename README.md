@@ -1,4 +1,4 @@
-> **Caso de portafolio:** este repositorio incluye **Colombia Energy Intelligence**, una solución end-to-end de ingeniería de datos, forecasting y BI. Consulta la [presentación técnica](PORTFOLIO.md), abre el [dashboard ejecutivo](portfolio/dashboard.html) o usa el [post listo para LinkedIn](LINKEDIN_POST.md).
+> **Caso de portafolio:** este repositorio incluye **Colombia Energy Intelligence**, una solución end-to-end de ingeniería de datos, forecasting y BI. Consulta la [presentación técnica](PORTFOLIO.md), abre el [dashboard ejecutivo](portfolio/dashboard.html) o sigue la [estrategia completa para LinkedIn](social/ESTRATEGIA_LINKEDIN.md).
 
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/69567089/132707858-021aeaf4-8cf9-44e9-b4d3-0350b60418de.png">

@@ -21,6 +21,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.backends.backend_pdf import PdfPages
 
 
 NAVY = "#081c2c"
@@ -269,6 +270,20 @@ def social_slides(
     return paths
 
 
+def export_carousel(slides: list[Path], output: Path) -> None:
+    """Package the social slides as a native LinkedIn document carousel."""
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with PdfPages(output) as pdf:
+        for slide in slides:
+            image = plt.imread(slide)
+            fig = plt.figure(figsize=(12, 6.75), facecolor="white")
+            ax = fig.add_axes([0, 0, 1, 1])
+            ax.imshow(image)
+            ax.axis("off")
+            pdf.savefig(fig, dpi=160, facecolor="white")
+            plt.close(fig)
+
+
 def card(label: str, value: str, detail: str) -> str:
     return f"<article class='card'><span>{html.escape(label)}</span><strong>{html.escape(value)}</strong><small>{html.escape(detail)}</small></article>"
 
@@ -300,10 +315,17 @@ def build_dashboard(price_dir: Path, demand_dir: Path, output: Path, cover: Path
     }
     plot_cover(metrics, validation, ranking, cover)
     slides = social_slides(history, forecast, predictions, metrics, validation, ranking, output.parent / "screenshots")
+    export_carousel(slides, output.parent / "linkedin_carousel.pdf")
     slide_images = [base64.b64encode(path.read_bytes()).decode("ascii") for path in slides]
 
     document = f"""<!doctype html><html lang='es'><head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width,initial-scale=1'><title>Colombia Energy Intelligence</title>
+<meta name='description' content='Proyecto end-to-end de ingeniería de datos, forecasting y BI aplicado al mercado eléctrico colombiano.'>
+<meta property='og:title' content='Colombia Energy Intelligence'>
+<meta property='og:description' content='39.120 horas validadas, forecasting temporal y análisis BI de 241,6 TWh.'>
+<meta property='og:type' content='website'><meta property='og:url' content='https://chandro-dev.github.io/API_XM/'>
+<meta property='og:image' content='https://chandro-dev.github.io/API_XM/cover.png'>
+<meta name='twitter:card' content='summary_large_image'>
 <style>
 :root{{--navy:{NAVY};--blue:{BLUE};--green:{GREEN};--bg:#f1f5f9;--muted:{MUTED}}}
 *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:#142536;font-family:Inter,Segoe UI,Arial,sans-serif}}

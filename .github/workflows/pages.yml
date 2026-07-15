@@ -23,6 +23,7 @@ jobs:
           mkdir _site
           cp portfolio/dashboard.html _site/index.html
           cp portfolio/cover.png _site/cover.png
+          cp portfolio/linkedin_carousel.pdf _site/linkedin_carousel.pdf
           cp -r portfolio/screenshots _site/screenshots
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

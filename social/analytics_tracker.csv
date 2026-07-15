@@ -1,0 +1,10 @@
+post_id,publication_date,measurement_window,format,topic,impressions,members_reached,out_of_network_percent,profile_views,new_followers,reactions,comments,reposts,saves,sends,link_clicks,recruiter_messages,interviews,notes
+01,,24h,document,launch,,,,,,,,,,,,,,
+01,,7d,document,launch,,,,,,,,,,,,,,
+01,,14d,document,launch,,,,,,,,,,,,,,
+02,,24h,image,data_engineering,,,,,,,,,,,,,,
+02,,7d,image,data_engineering,,,,,,,,,,,,,,
+03,,24h,image,machine_learning,,,,,,,,,,,,,,
+03,,7d,image,machine_learning,,,,,,,,,,,,,,
+04,,24h,image,business_intelligence,,,,,,,,,,,,,,
+04,,7d,image,business_intelligence,,,,,,,,,,,,,,
