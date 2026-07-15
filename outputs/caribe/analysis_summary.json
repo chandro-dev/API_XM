@@ -1,0 +1,29 @@
+{
+  "xm_window": {
+    "start": "2022-01-01",
+    "end": "2024-12-01"
+  },
+  "caribe_commercial_demand_twh": 52.81705479125999,
+  "caribe_share_of_xm_universe_percent": 21.862271052484182,
+  "operators": [
+    {
+      "operator": "Afinia / Caribemar",
+      "total_demand_twh": 26.50162914702,
+      "share_percent": 10.969672618709543
+    },
+    {
+      "operator": "Air-e",
+      "total_demand_twh": 26.315425644239998,
+      "share_percent": 10.892598433774639
+    }
+  ],
+  "option_tariff_balance_cutoff": "2024-12-31",
+  "caribe_option_tariff_balance_cop": 1733573902131.0,
+  "national_option_tariff_balance_cop": 3307331788596.0,
+  "caribe_share_of_option_balance_percent": 52.41608683194503,
+  "interpretation_limits": [
+    "DemaCome is commercial demand by market agent, not household billing or geocoded municipal consumption.",
+    "The spot-value proxy assumes 100% spot exposure and is not an actual energy purchase cost.",
+    "User arrears, option-tariff balances, MEM obligations and subsidy receivables must remain separate."
+  ]
+}

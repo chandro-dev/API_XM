@@ -23,6 +23,7 @@ def main() -> None:
 
     run("models/precio_bolsa_model.py", *cache, "--backend", args.backend, "--device", args.device, "--strict-validation")
     run("models/consumo_actores.py", *cache)
+    run("models/caribe_policy_analysis.py")
     run("dashboards/energy_market_dashboard.py")
     print("\nProyecto listo: abre portfolio/dashboard.html")
 

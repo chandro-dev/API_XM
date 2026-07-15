@@ -1,5 +1,7 @@
 > **Caso de portafolio:** este repositorio incluye **Colombia Energy Intelligence**, una solución end-to-end de ingeniería de datos, forecasting y BI. Consulta la [presentación técnica](PORTFOLIO.md), abre el [dashboard ejecutivo](portfolio/dashboard.html) o sigue la [estrategia completa para LinkedIn](social/ESTRATEGIA_LINKEDIN.md).
 
+> **Reto de política pública:** consulta el análisis [Asequibilidad y sostenibilidad eléctrica en el Caribe](docs/RETO_MINENERGIA_CARIBE.md), con separación rigurosa entre consumo, cartera de usuarios, opción tarifaria, obligaciones del MEM y subsidios.
+
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/69567089/132707858-021aeaf4-8cf9-44e9-b4d3-0350b60418de.png">
 </p>

@@ -1,0 +1,73 @@
+month,operator,demanda_comercial_kwh,demand_twh,precio_bolsa_cop_kwh,spot_value_100pct_proxy_cop_billions,warning
+2022-01-01,Afinia / Caribemar,712536418.56,0.7125364185599999,289.91886715053766,206.57775127241652,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-01-01,Air-e,655266263.87,0.65526626387,289.91886715053766,189.9740529031557,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-02-01,Afinia / Caribemar,660905801.74,0.66090580174,399.1646476190476,263.8102314609312,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-02-01,Air-e,613245122.62,0.61324512262,399.1646476190476,244.78577327471194,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-03-01,Afinia / Caribemar,742355146.11,0.74235514611,227.00017596774194,168.51474879752877,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-03-01,Air-e,696407545.66,0.69640754566,227.00017596774194,158.08463541008328,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-04-01,Afinia / Caribemar,704513395.59,0.70451339559,143.79478555555553,101.30535263988033,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-04-01,Air-e,683881375.3,0.6838813752999999,143.79478555555553,98.33857570670189,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-05-01,Afinia / Caribemar,738995048.48,0.73899504848,105.48973924731182,77.95639496920977,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-05-01,Air-e,730750606.4,0.7307506064,105.48973924731182,77.08669092395098,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-06-01,Afinia / Caribemar,669697590.12,0.66969759012,104.1452928888889,69.74585167003048,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-06-01,Air-e,663706684.28,0.66370668428,104.1452928888889,69.12192702665392,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-07-01,Afinia / Caribemar,735173299.73,0.73517329973,109.39845967741935,80.42682658642774,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-07-01,Air-e,728190998.35,0.72819099835,109.39845967741935,79.66297357045222,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-08-01,Afinia / Caribemar,714600525.16,0.7146005251599999,150.8862905376344,107.82342245763788,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-08-01,Air-e,714531564.24,0.71453156424,150.8862905376344,107.81301720022702,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-09-01,Afinia / Caribemar,676479984.03,0.67647998403,251.0653988888889,169.84071703084112,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-09-01,Air-e,671355532.77,0.6713555327699999,251.0653988888889,168.55414463116256,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-10-01,Afinia / Caribemar,694399984.36,0.69439998436,298.06713940860215,206.97781694356325,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-10-01,Air-e,681682952.9,0.6816829529,298.06713940860215,203.18728775451189,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-11-01,Afinia / Caribemar,656870543.88,0.65687054388,184.5359235,121.21621243484306,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-11-01,Air-e,639625612.11,0.63962561211,184.5359235,118.03390302497164,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-12-01,Afinia / Caribemar,703323836.67,0.70332383667,338.0844010752688,237.7828180825371,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2022-12-01,Air-e,661995825.99,0.6619958259900001,338.0844010752688,223.810462344157,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-01-01,Afinia / Caribemar,683499812.56,0.6834998125599999,371.9813147311828,254.24915889458578,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-01-01,Air-e,669533745.66,0.66953374566,371.9813147311828,249.05404296750015,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-02-01,Afinia / Caribemar,633944307.68,0.63394430768,526.685957797619,333.88956488078924,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-02-01,Air-e,590166051.97,0.59016605197,526.685957797619,310.8321723414589,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-03-01,Afinia / Caribemar,713903254.35,0.71390325435,293.495411827957,209.527329640772,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-03-01,Air-e,684504865.84,0.68450486584,293.495411827957,200.89903749795127,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-04-01,Afinia / Caribemar,702253931.61,0.70225393161,226.95729705555556,159.38165416484256,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-04-01,Air-e,688636419.75,0.68863641975,226.95729705555556,156.291060480475,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-05-01,Afinia / Caribemar,748715586.79,0.7487155867899999,569.6889885483871,426.5350253488072,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-05-01,Air-e,776089723.55,0.7760897235499999,569.6889885483871,442.12976963199685,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-06-01,Afinia / Caribemar,728028918.22,0.72802891822,462.1930015,336.48987089089985,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-06-01,Air-e,759818629.86,0.75981862986,462.1930015,351.1828531306109,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-07-01,Afinia / Caribemar,769430093.29,0.76943009329,521.6455363978495,401.36977373490936,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-07-01,Air-e,799491094.55,0.79949109455,521.6455363978495,417.0509608618385,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-08-01,Afinia / Caribemar,778986121.37,0.77898612137,529.8244637634409,412.72590403402296,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-08-01,Air-e,808910248.7,0.8089102487000001,529.8244637634409,428.5804387502291,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-09-01,Afinia / Caribemar,768943280.31,0.7689432803099999,1014.9860972222222,780.4667390671,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-09-01,Air-e,802573213.72,0.80257321372,1014.9860972222222,814.6006539287592,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-10-01,Afinia / Caribemar,749536997.0,0.749536997,1015.4398694623657,761.1097503908935,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-10-01,Air-e,770470828.91,0.77047082891,1015.4398694623657,782.366797932931,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-11-01,Afinia / Caribemar,731342637.6,0.7313426376000001,504.5499100555556,368.9988620208728,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-11-01,Air-e,743619839.32,0.7436198393200001,504.5499100555556,375.19332304443276,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-12-01,Afinia / Caribemar,793277522.86,0.79327752286,656.1912600537635,520.5417772978316,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2023-12-01,Air-e,761077482.63,0.76107748263,656.1912600537635,499.412392325526,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-01-01,Afinia / Caribemar,797767760.76,0.79776776076,558.7221962365592,445.7305553785491,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-01-01,Air-e,747876791.88,0.74787679188,558.7221962365592,417.85536367354564,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-02-01,Afinia / Caribemar,729636144.36,0.72963614436,568.7060877586207,414.9485171462598,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-02-01,Air-e,689921458.38,0.68992145838,568.7060877586207,392.3625334560118,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-03-01,Afinia / Caribemar,819379490.17,0.81937949017,622.7735682258065,510.2878888242129,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-03-01,Air-e,777637624.02,0.77763762402,622.7735682258065,484.2921578975735,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-04-01,Afinia / Caribemar,786323339.52,0.78632333952,748.6567620555555,588.6862852937544,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-04-01,Air-e,771307862.57,0.7713078625700001,748.6567620555555,577.4448469396477,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-05-01,Afinia / Caribemar,794071639.83,0.7940716398300001,291.5498530107527,231.51146987244388,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-05-01,Air-e,813304251.88,0.81330425188,291.5498530107527,237.1187350886342,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-06-01,Afinia / Caribemar,740296882.28,0.74029688228,280.69736188888885,207.7993818705653,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-06-01,Air-e,757745597.98,0.7577455979800001,280.69736188888885,212.69719033590454,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-07-01,Afinia / Caribemar,805639587.61,0.80563958761,285.09281123655916,229.68205487519708,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-07-01,Air-e,817540529.2,0.8175405292000001,285.09281123655916,233.0749277694523,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-08-01,Afinia / Caribemar,788098002.64,0.78809800264,567.417755860215,447.1808000559066,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-08-01,Air-e,823724558.07,0.82372455807,567.417755860215,467.3959401870268,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-09-01,Afinia / Caribemar,759608452.97,0.75960845297,873.7069535555555,663.6751873394671,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-09-01,Air-e,786495231.65,0.78649523165,873.7069535555555,687.1663528308925,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-10-01,Afinia / Caribemar,782842135.51,0.78284213551,1529.135663655914,1197.0718284208967,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-10-01,Air-e,813041412.59,0.8130414125900001,1529.135663655914,1243.2506200205514,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-11-01,Afinia / Caribemar,706519548.95,0.70651954895,1046.4334312777778,739.3256758725764,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-11-01,Air-e,721345852.75,0.72134585275,1046.4334312777778,754.8404158311771,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-12-01,Afinia / Caribemar,779732124.35,0.77973212435,741.0041555913979,577.7847443914586,Counterfactual at 100% spot exposure; not actual procurement cost or debt
+2024-12-01,Air-e,799952244.32,0.79995224432,741.0041555913979,592.7679373157853,Counterfactual at 100% spot exposure; not actual procurement cost or debt
